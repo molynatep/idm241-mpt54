@@ -1,0 +1,85 @@
+@font-face {
+   font-family: 'montserrat';
+   src: url('/fonts/Montserrat-Medium.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'montserrat';
+   src: url('/fonts/Montserrat-Bold.woff2') format('woff2');
+   font-weight: bold;
+   font-style: normal;
+ }
+ 
+ /*css reset and font stuff*/
+ body {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-family: 'montserrat',sans-serif;
+   font-size: 1rem;
+   color: #3A3F67;
+   background-color: #FCF7F3;
+ }
+
+ h1, h2{
+   margin: 0 0 .3rem;
+   text-align: center;
+   letter-spacing: .03em;
+ }
+ h2 {
+   font-size: 1.2rem;
+   margin-bottom: 2rem;;
+ }
+
+ a {
+  color: lightslategray;
+  text-decoration: none;
+ }
+
+ a:hover {
+  color:#9FAEA8;
+  text-decoration: underline;
+ }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.width {
+  margin: 0 2rem 1.8rem;
+  padding: 5.5rem 0 0;
+}
+
+main {
+  display: block;
+}
+
+p {
+  max-width: 600px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+ul {
+  line-height: 1.5;
+}
+
+img {
+  width: 300px;
+  border-radius: 5px;
+  filter: drop-shadow(-4px 6px 2px rgba(0, 0, 0, 0.02));
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  margin: 0 4rem 3rem;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
