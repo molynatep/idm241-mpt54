@@ -1,17 +1,4 @@
-@font-face {
-  font-family: 'montserrat';
-  src: url('/fonts/Montserrat-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'montserrat';
-  src: url('/fonts/Montserrat-Medium.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
- 
  html {
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
   box-sizing: border-box;
@@ -62,16 +49,8 @@
   font-weight:bold;
 }
 
-main {
-  display: block;
-}
-
 p {
   max-width: 600px;
-}
-
-.bold {
-  font-weight: bold;
 }
 
 ul {
@@ -79,7 +58,7 @@ ul {
 }
 
 img {
-  width: 300px;
+  width: 250px;
   border-radius: 5px;
   filter: drop-shadow(-4px 6px 2px rgba(0, 0, 0, 0.02));
 }
@@ -89,5 +68,5 @@ img {
   justify-items: center;
   margin: 0 4rem 3rem;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
