@@ -51,7 +51,7 @@
 .shadow-drop-2-br:hover {
 	-webkit-animation: shadow-drop-br 0.3s ease-in-out both;
 	        animation: shadow-drop-br 0.3s ease-in-out both;
-   transform: scale(1.1);
+   transform: scale(1.04);
 }
 
 @-webkit-keyframes shadow-drop-br {
