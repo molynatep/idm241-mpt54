@@ -44,7 +44,18 @@
  }
 
  .shadow-drop-2-br {
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
+   }
+
+
+.shadow-drop-2-br:hover {
+	-webkit-animation: shadow-drop-br 0.3s ease-in-out both;
+	        animation: shadow-drop-br 0.3s ease-in-out both;
+   transform: scale(1.04);
+}
+
+ .shadow-drop-2-br {
+    transition: all .3s ease-in-out;
    }
 
 
@@ -74,4 +85,48 @@
              box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
    }
  }
+
+ @keyframes cf3FadeInOut {
+   0% {
+   opacity:1;
+ }
+ 45% {
+ opacity:1;
+ }
+ 55% {
+ opacity:0;
+ }
+ 100% {
+ opacity:0;
+ }
+ }
  
+#stage img.top:hover {
+ animation-name: cf3FadeInOut;
+ animation-timing-function: ease-in-out;
+ animation-iteration-count: infinite;
+ animation-duration: 5s;
+ animation-direction: alternate;
+ }
+
+#stage a {
+   position: absolute;
+}
+
+#stage a:nth-of-type(1) {
+   animation-name: fader;
+   animation-delay: 4s;
+   animation-duration: 1s;
+   z-index: 20;
+ }
+ #stage a:nth-of-type(2) {
+   z-index: 10;
+ }
+ #stage a:nth-of-type(n+3) {
+   display: none;
+ }
+
+ @keyframes fader {
+   from { opacity: 1.0; }
+   to   { opacity: 0.0; }
+ }
