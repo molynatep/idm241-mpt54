@@ -11,9 +11,10 @@
     border: 0;
     font-family: 'roboto',sans-serif;
     font-size: 1rem;
-    color: #3A3F67;
     background-color: #FCF7F3;
   }
+
+  /*Build Fonts*/
 
   h1 {
      font-size: 1.2rem;
@@ -40,10 +41,14 @@
     margin: 2rem;
  }
 
+ /*Pic Round Edges*/
+
  img {
     border-radius: 5px;
     cursor: pointer;
  }
+
+ /*Image expands*/
 
  .scale {
     transition: all .3s ease-in-out;
@@ -53,15 +58,18 @@
    transform: scale(1.04);
 }
 
+/*Drop shadow*/
+
 .box {
   width: 250px;
-  height: 188px;
+  height: 187px;
   border-radius:10px;
 }
 .box:hover {
-   box-shadow: 0 0 9px rgba(33,33,33,.4); 
+   box-shadow: 3px 3px 7px rgba(33,33,33,.4); 
 }
 
+/*Fading Slideshow*/
 
  #stage a {
    position: absolute;
@@ -97,8 +105,8 @@
  .grid {
    display: grid;
   justify-items: center;
-  margin: 2rem;
-  grid-gap:1rem;
+  margin: 2.5rem;
+  grid-gap:3rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
