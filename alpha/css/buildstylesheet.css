@@ -1,0 +1,49 @@
+
+ html {
+   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+   box-sizing: border-box;
+ }
+ 
+  /*css reset and font stuff*/
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'roboto',sans-serif;
+    font-size: 1rem;
+    color: #3A3F67;
+    background-color: #FCF7F3;
+  }
+
+  h1 {
+     font-size: 1.5rem;
+  }
+
+  p {
+     color: #767481
+  }
+
+.bg {
+     background-color: white;
+     width: 350px;
+  }
+
+  .center {
+   display: flex;
+   justify-content: center;
+   justify-items: center;
+ }
+
+ main {
+    margin: 2rem;
+    padding: 2rem 0 2rem 5rem;
+ }
+
+
+ img {
+    width: 300px;
+ }
+ .hover img:hover {
+   @keyframes shadow-drop-2-bl{0%{transform:translateZ(0) translateX(0) translateY(0);box-shadow:0 0 0 0 transparent}100%{transform:translateZ(50px) translateX(12px) translateY(-12px);box-shadow:-12px 12px 20px -12px rgba(0,0,0,.35)}}
+
+}
