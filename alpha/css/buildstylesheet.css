@@ -92,3 +92,22 @@
    from { opacity: 1.0; }
    to   { opacity: 0.0; }
  }
+
+ .grid {
+   display: grid;
+  justify-items: center;
+  margin: 2rem;
+  grid-gap:1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+ }
+
+ a.link {
+   color: lightslategray;
+   text-decoration: none;
+  }
+ 
+  a.link:hover {
+   color:#9FAEA8;
+   text-decoration: underline;
+  }
