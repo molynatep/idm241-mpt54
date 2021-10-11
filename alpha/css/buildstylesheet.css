@@ -43,25 +43,11 @@
     cursor: pointer;
  }
 
- .shadow-drop-2-br {
+ .scale {
     transition: all .3s ease-in-out;
    }
 
-
-.shadow-drop-2-br:hover {
-	-webkit-animation: shadow-drop-br 0.3s ease-in-out both;
-	        animation: shadow-drop-br 0.3s ease-in-out both;
-   transform: scale(1.04);
-}
-
- .shadow-drop-2-br {
-    transition: all .3s ease-in-out;
-   }
-
-
-.shadow-drop-2-br:hover {
-	-webkit-animation: shadow-drop-br 0.3s ease-in-out both;
-	        animation: shadow-drop-br 0.3s ease-in-out both;
+.scale:hover {
    transform: scale(1.04);
 }
 
