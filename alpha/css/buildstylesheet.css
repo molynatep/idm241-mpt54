@@ -65,64 +65,30 @@
    transform: scale(1.04);
 }
 
-@-webkit-keyframes shadow-drop-br {
-   0% {
-     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-   }
-   100% {
-     -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
-             box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
-   }
- }
- @keyframes shadow-drop-br {
-   0% {
-     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-   }
-   100% {
-     -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
-             box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
-   }
- }
 
- @keyframes cf3FadeInOut {
-   0% {
-   opacity:1;
- }
- 45% {
- opacity:1;
- }
- 55% {
- opacity:0;
- }
- 100% {
- opacity:0;
- }
- }
- 
-#stage img.top:hover {
- animation-name: cf3FadeInOut;
- animation-timing-function: ease-in-out;
- animation-iteration-count: infinite;
- animation-duration: 5s;
- animation-direction: alternate;
- }
-
-#stage a {
+ #stage a {
    position: absolute;
 }
 
 #stage a:nth-of-type(1) {
    animation-name: fader;
-   animation-delay: 4s;
+   animation-delay: 3.8s;
    animation-duration: 1s;
    z-index: 20;
  }
- #stage a:nth-of-type(2) {
+
+#stage a {
+    animation-play-state: paused;
+ }
+
+ #stage a:hover {
+    animation-play-state: running;
+ }
+
+ #stage a:nth-of-type(2){
    z-index: 10;
  }
- #stage a:nth-of-type(n+3) {
+ #stage a:nth-of-type(n+3){
    display: none;
  }
 
