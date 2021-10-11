@@ -16,7 +16,8 @@
   }
 
   h1 {
-     font-size: 1.4rem;
+     font-size: 1.2rem;
+     margin: 1.2rem 0;
   }
 
   .foodheader {
@@ -25,7 +26,7 @@
 
   p {
      color: #767481;
-     margin-top: .6rem;
+     margin-top: .4rem;
   }
 
   .center {
@@ -57,7 +58,7 @@
   border-radius:10px;
 }
 .box:hover {
-   box-shadow: 0 0 7px rgba(33,33,33,.3); 
+   box-shadow: 0 0 9px rgba(33,33,33,.4); 
 }
 
 
@@ -67,7 +68,7 @@
 
 #stage a:nth-of-type(1) {
    animation-name: fader;
-   animation-delay: 3.8s;
+   animation-delay: 3s;
    animation-duration: 1s;
    z-index: 20;
  }
