@@ -27,6 +27,7 @@
   p {
      color: #767481;
      margin-top: .4rem;
+
   }
 
   .center {
@@ -100,6 +101,28 @@
   grid-gap:1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+  /* Alpha Comments */
+
+  div.alpha>h1, div.alpha>h2{
+   margin: 0 0 .3rem;
+   text-align: center;
+   letter-spacing: .03em;
+ }
+
+ div.alpha>h2 {
+   font-size: 1.2rem;
+   margin-bottom: 2rem;;
+ }
+
+ div.alpha>ul {
+    line-height: 1.8;
+ }
+
+ .alpha {
+   font-family: 'montserrat',sans-serif;
+   font-size: 1rem;
+   color: #3A3F67;
  }
 
  a.link {
@@ -110,4 +133,9 @@
   a.link:hover {
    color:#9FAEA8;
    text-decoration: underline;
+  }
+
+  .bold {
+   font-weight:bold;
+   color: #3A3F67;
   }
