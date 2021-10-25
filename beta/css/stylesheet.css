@@ -1,4 +1,14 @@
+@font-face {
+  font-family: 'galano-grotesque';
+  src: url('../fonts/GalanoGrotesqueDEMO-Bold.woff2') format('woff2'),
+      url('../fonts/GalanoGrotesqueDEMO-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
+ 
+ 
  html {
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
   box-sizing: border-box;
@@ -12,13 +22,14 @@
    font-family: 'montserrat',sans-serif;
    font-size: 1rem;
    color: #3A3F67;
-   background-color: #FCF7F3;
  }
 
  h1, h2{
    margin: 0 0 .3rem;
    text-align: center;
    letter-spacing: .03em;
+   color: #f43939;
+   font-family: 'galano-grotesque','montserrat',sans-serif;
  }
  h2 {
    font-size: 1.2rem;
@@ -26,12 +37,12 @@
  }
 
  a {
-  color: lightslategray;
+  color: #0ab3c9;
   text-decoration: none;
  }
 
  a:hover {
-  color:#9FAEA8;
+  color:#0ab3c9;
   text-decoration: underline;
  }
 
@@ -57,16 +68,14 @@ ul {
   line-height: 1.5;
 }
 
-img {
-  width: 250px;
-  border-radius: 5px;
-  filter: drop-shadow(-4px 6px 2px rgba(0, 0, 0, 0.02));
-}
-
 .grid {
   display: grid;
   justify-items: center;
   margin: 0 4rem 3rem;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.alpha {
+  background-color: #f7feff;
 }
