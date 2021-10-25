@@ -22,6 +22,7 @@
    font-family: 'montserrat',sans-serif;
    font-size: 1rem;
    color: #3A3F67;
+   background-color: #F7F7FF;
  }
 
  h1, h2{
@@ -58,24 +59,28 @@
 }
 .bold {
   font-weight:bold;
+  color: #0ab3c9;
 }
 
 p {
   max-width: 600px;
 }
 
-ul {
-  line-height: 1.5;
+li {
+  margin-bottom: 1.2rem;;
 }
 
 .grid {
   display: grid;
   justify-items: center;
-  margin: 0 4rem 3rem;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
 
 .alpha {
-  background-color: #f7feff;
+  background-color: white;
+  padding: 2.2rem;
+  border-radius: 5px;
+  margin: 3rem 0 3rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
