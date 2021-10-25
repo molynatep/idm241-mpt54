@@ -22,7 +22,7 @@
    font-family: 'montserrat',sans-serif;
    font-size: 1rem;
    color: #3A3F67;
-   background-color: #F7F7FF;
+   background-color: #e8e8f6;
  }
 
  h1, h2{
@@ -67,7 +67,8 @@ p {
 }
 
 li {
-  margin-bottom: 1.2rem;;
+  margin-bottom: .8rem;
+  line-height: 1.8;
 }
 
 .grid {
@@ -84,6 +85,7 @@ li {
   margin-top: 2rem;
   border-radius: 5px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  max-width: 650px;
 }
 
 img{
@@ -121,6 +123,6 @@ div.grids>img {
 
 @media only screen and (max-width: 450px) {
   div.grids>img {
-    width: 340px;
+    width: 310px;
   }
 }
