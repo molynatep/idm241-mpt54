@@ -151,25 +151,7 @@
   /*modal shit*/
   * {
     box-sizing: border-box;
- }
-  .logo {
-    position: relative;
-    display: flex;
-    margin: 10px;
-    flex-direction: row;
-    z-index: 1000;
- }
-  .logo a {
-    display: block;
-    height: 30px;
-    width: auto;
-    cursor: pointer;
-    margin-right: 10px;
- }
-  .logo a img {
-    height: 100%;
-    width: auto;
- }
+ } 
   .container {
     display: flex;
     flex-direction: column;
@@ -192,6 +174,7 @@
     margin-top: 10px;
     flex-wrap: wrap;
  }
+
   .btn {
     display: flex;
     padding: 10px 20px;
@@ -269,22 +252,11 @@
   .modal .m-container.full-modal {
     max-width: 100%;
  }
-  .modal .m-container.bounce {
-    transform: scale(0.4);
-    transition: all 0.3s cubic-bezier(0.75, -0.5, 0, 2.75);
- }
-  .modal .m-container.slide-from-top {
-    top: -200px;
- }
+
   .modal .m-container.slide-from-bottom {
     bottom: -200px;
- }
-  .modal .m-container.slide-from-left {
-    left: -200px;
- }
-  .modal .m-container.slide-from-right {
-    right: -200px;
- }
+ } 
+
   .modal .m-container .m-title {
     background-color: #262626;
     display: flex;
@@ -356,18 +328,6 @@
   .modal.active .m-container {
     opacity: 1;
  }
-  .modal.active .m-container.bounce {
-    transform: scale(1);
- }
-  .modal.active .m-container.slide-from-top {
-    top: 0px;
- }
   .modal.active .m-container.slide-from-bottom {
     bottom: 0px;
- }
-  .modal.active .m-container.slide-from-left {
-    left: 0px;
- }
-  .modal.active .m-container.slide-from-right {
-    right: 0px;
  }
