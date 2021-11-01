@@ -12,10 +12,48 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-   <div class="center">
+<!-- Modal container and dark background   -->
+<div class="modal" id="fin-fout-modal">
+
+   <!-- Content container  -->
+   <div class="m-container">
+
+       <h4 class="m-title">Modal title</h4>  <!-- Title  -->
+       <p class="m-close"></p> <!-- Main close button  -->
+
+       <!-- Content container  -->
+       <div class="m-content">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p> <!-- Content example  -->
+
+           <!-- Footer container  -->
+           <div class="m-footer">
+               <p class="btn btn-modal red">Button</p>  <!-- button example  -->
+               <p class="btn btn-modal blue">Button</p>  <!-- button example  -->
+               <p class="btn dark close-modal" data-id="close-options-modal">Close modal</p>  <!-- close button example  -->
+           </div>
+       </div>
+   </div>
+</div>
+<div class="modal" id="slide-bottom-modal">
+   <div class="m-container slide-from-bottom">
+       <h2 class="m-title">Modal title</h2>
+       <p class="m-close"></p>
+       <div class="m-content">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+           <div class="m-footer">
+               <p class="btn btn-modal green" data-id="modal-in-modal">Modal in modal</p>    
+           </div>
+       </div>
+   </div>
+</div>
+
+
+    <div class="center">
    <main class="bg grid">
       <div>
       <h1>Most mentioned dishes</h1>
+      <div class="btn btn-modal dark" data-id="slide-bottom-modal">
       <div id="stage" class="scale box">
          <a href="../imgs/chicken2-large.jpg" target="_blank" > 
          <img src="../imgs/chicken2-large.jpg" width="250" alt="chicken2">
@@ -24,6 +62,7 @@
          <img src="../imgs/chicken1-large.jpg" width="250" alt="chicken1">
          </a>
       </div>
+   </div>
       <div class="foodinfo">
       <h1 class="foodheader">Chicken Briyani</h1>
       <p>2 Photos • 4 Reviews</p>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/buildstylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <div class="logo">
+        <a href="https://codeorum.com/" class="codeorum"><img alt="codeorum" src="https://codeorum.com/images/codeorum-logo-dark.svg"></a>
+        <a href="https://zovko.pro/" class="mirko-zovko"><img alt="mirko-zovko" src="https://codeorum.com/images/zovko-logo-dark.svg"></a>
+    </div>
+    <div class="container">
+        <h1>Simple modal element with pure js and animation effect example</h1>
+
+        <div class="button-container"> <!-- only for demo -->
+            <p class="btn btn-modal dark" data-id="fin-fout-modal">Fade in fade out</p>   
+            <p class="btn btn-modal dark" data-id="slide-top-modal">Slide from top</p>       
+            <p class="btn btn-modal dark" data-id="slide-bottom-modal">Slide from bottom</p>
+            <p class="btn btn-modal dark" data-id="slide-left-modal">Slide from left</p>  
+            <p class="btn btn-modal dark" data-id="slide-right-modal">Slide from right</p>          
+            <p class="btn btn-modal dark" data-id="bounce-modal">Bounce</p>
+        </div>
+        <div class="button-container"> <!-- only for demo -->
+            <p class="btn btn-modal dark" data-id="sm-modal">Small</p>   
+            <p class="btn btn-modal dark" data-id="n-modal">Normal</p>       
+            <p class="btn btn-modal dark" data-id="l-modal">Large</p>
+            <p class="btn btn-modal dark" data-id="xl-modal">Extra large</p>
+            <p class="btn btn-modal dark" data-id="full-modal">Full</p>
+            <p class="btn btn-modal dark" data-id="close-options-modal">Close/not options</p>
+        </div>
+    </div>
+
+     
+<!-- Modal container and dark background   -->
+<div class="modal" id="fin-fout-modal">
+
+    <!-- Content container  -->
+    <div class="m-container">
+
+        <h4 class="m-title">Modal title</h4>  <!-- Title  -->
+        <p class="m-close"></p> <!-- Main close button  -->
+
+        <!-- Content container  -->
+        <div class="m-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p> <!-- Content example  -->
+
+            <!-- Footer container  -->
+            <div class="m-footer">
+                <p class="btn btn-modal red">Button</p>  <!-- button example  -->
+                <p class="btn btn-modal blue">Button</p>  <!-- button example  -->
+                <p class="btn dark close-modal" data-id="close-options-modal">Close modal</p>  <!-- close button example  -->
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal" id="slide-top-modal">
+        <div class="m-container slide-from-top">
+            <h2 class="m-title">Modal title</h2>
+            <p class="m-close"></p>
+            <div class="m-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+                <div class="m-footer">
+                    <p class="btn btn-modal blue" data-id="modal-in-modal">Modal in modal</p>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="slide-bottom-modal">
+        <div class="m-container slide-from-bottom">
+            <h2 class="m-title">Modal title</h2>
+            <p class="m-close"></p>
+            <div class="m-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+                <div class="m-footer">
+                    <p class="btn btn-modal green" data-id="modal-in-modal">Modal in modal</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="slide-left-modal">
+        <div class="m-container slide-from-left">
+            <h2 class="m-title">Modal title</h2>
+            <p class="m-close"></p>
+            <div class="m-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+                <div class="m-footer">
+                    <p class="btn btn-modal dark" data-id="modal-in-modal">Modal in modal</p>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="slide-right-modal">
+        <div class="m-container slide-from-right">
+            <h2 class="m-title">Modal title</h2>
+            <p class="m-close"></p>
+            <div class="m-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+                <div class="m-footer">
+                    <p class="btn btn-modal red" data-id="modal-in-modal">Modal in modal</p>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="bounce-modal">
+        <div class="m-container bounce">
+            <h2 class="m-title">Modal title</h2>
+            <p class="m-close"></p>
+            <div class="m-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+                <div class="m-footer">
+                    <p class="btn btn-modal blue" data-id="modal-in-modal">Modal in modal</p>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-in-modal">
+        <div class="m-container slide-from-right">
+            <h2 class="m-title">Modal title</h2>
+            <p class="m-close"></p>
+            <div class="m-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+                <div class="m-footer">
+                    <p class="btn red">Red button example</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="modal" id="sm-modal">
+        <div class="m-container sm-modal">
+            <h2 class="m-title">Modal title</h2>
+            <p class="m-close"></p>
+            <div class="m-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+                <div class="m-footer">
+                    <p class="btn red">Red button example</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="n-modal">
+        <div class="m-container">
+            <h2 class="m-title">Modal title</h2>
+            <p class="m-close"></p>
+            <div class="m-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+                <div class="m-footer">
+                    <p class="btn red">Red button example</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="l-modal">
+        <div class="m-container l-modal">
+            <h2 class="m-title">Modal title</h2>
+            <p class="m-close"></p>
+            <div class="m-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+                <div class="m-footer">
+                    <p class="btn red">Red button example</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="xl-modal">
+        <div class="m-container xl-modal">
+            <h2 class="m-title">Modal title</h2>
+            <p class="m-close"></p>
+            <div class="m-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+                <div class="m-footer">
+                    <p class="btn red">Red button example</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="full-modal">
+        <div class="m-container full-modal">
+            <h2 class="m-title">Modal title</h2>
+            <p class="m-close"></p>
+            <div class="m-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+                <div class="m-footer">
+                    <p class="btn red">Red button example</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal do-not-close" id="close-options-modal">
+        <div class="m-container">
+            <h2 class="m-title">Modal title</h2>
+            <p class="m-close"></p>
+            <div class="m-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, amet tempora minima atque id modi?</p>
+                <div class="m-footer">
+                    <p class="btn red close-modal" data-id="close-options-modal">Close modal</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="script.js"></script>
+    </body>
+    </html>
+  
