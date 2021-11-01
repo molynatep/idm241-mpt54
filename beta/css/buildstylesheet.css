@@ -1,0 +1,149 @@
+
+ html {
+   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+   box-sizing: border-box;
+ }
+ 
+  /*css reset and font stuff*/
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'roboto',sans-serif;
+    font-size: 1rem;
+    background-color: #FCF7F3;
+  }
+
+  /*Build Fonts*/
+
+  h1 {
+     font-size: 1.2rem;
+     margin: 1.2rem 0;
+  }
+
+  .foodheader {
+     margin-bottom: 0rem;
+  }
+
+  p {
+     color: #767481;
+     margin-top: .4rem;
+
+  }
+
+  .center {
+   display: flex;
+   justify-content: center;
+   justify-items: center;
+ }
+
+ main {
+    margin: 2rem;
+ }
+
+ /*Pic Round Edges*/
+
+ img {
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
+ /*Image expands*/
+
+ .scale {
+    transition: all .3s ease-in-out;
+   }
+
+.scale:hover {
+   transform: scale(1.04);
+}
+
+/*Drop shadow*/
+
+.box {
+  width: 250px;
+  height: 187px;
+  border-radius:10px;
+}
+.box:hover {
+   box-shadow: 3px 3px 7px rgba(33,33,33,.4); 
+}
+
+/*Fading Slideshow*/
+
+ #stage a {
+   position: absolute;
+}
+
+#stage a:nth-of-type(1) {
+   animation-name: fader;
+   animation-delay: 2s;
+   animation-duration: .7s;
+   z-index: 20;
+ }
+
+#stage a {
+    animation-play-state: paused;
+ }
+
+ #stage a:hover {
+    animation-play-state: running;
+ }
+
+ #stage a:nth-of-type(2){
+   z-index: 10;
+ }
+ #stage a:nth-of-type(n+3){
+   display: none;
+ }
+
+ @keyframes fader {
+   from { opacity: 1.0; }
+   to   { opacity: 0.0; }
+ }
+
+ .grid {
+   display: grid;
+  justify-items: center;
+  margin: 2.5rem;
+  grid-gap:3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+  /* Alpha Comments */
+
+  div.alpha>h1, div.alpha>h2{
+   margin: 0 0 .3rem;
+   text-align: center;
+   letter-spacing: .03em;
+ }
+
+ div.alpha>h2 {
+   font-size: 1.2rem;
+   margin-bottom: 2rem;;
+ }
+
+ div.alpha>ul {
+    line-height: 1.8;
+ }
+
+ .alpha {
+   font-family: 'montserrat',sans-serif;
+   font-size: 1rem;
+   color: #3A3F67;
+ }
+
+ a.link {
+   color: lightslategray;
+   text-decoration: none;
+  }
+ 
+  a.link:hover {
+   color:#9FAEA8;
+   text-decoration: underline;
+  }
+
+  .bold {
+   font-weight:bold;
+   color: #3A3F67;
+  }
