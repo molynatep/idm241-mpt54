@@ -120,7 +120,7 @@
 
  div.alpha>h2 {
    font-size: 1.2rem;
-   margin-bottom: 2rem;;
+   margin-bottom: 2rem;
  }
 
  div.alpha>ul {
@@ -139,13 +139,13 @@
   }
  
   a.link:hover {
-   color:#9FAEA8;
+   color:#f43939;
    text-decoration: underline;
   }
 
   .bold {
    font-weight:bold;
-   color: #3A3F67;
+   color: #f43939;
   }
 
   /*modal shit*/
@@ -367,4 +367,21 @@
 
  .img2:hover {
   opacity: 100%;
+}
+
+@media screen and (max-width: 950px) {
+  .leftmodal {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+ 
+  .rightmodal {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    font-size: .7rem;
+  }
+  .modal .m-container {
+    max-width: 400px;
+  }
+
 }
