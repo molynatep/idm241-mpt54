@@ -311,11 +311,48 @@
    grid-column-end: 7;
    font-size: .85rem;
    padding-left: 1.2rem;
-   line-height: 1.5;
  }
 
  .photos>img {
    float: left;
    width:50%;
    padding: 0 5px 20px 0;
+ }
+
+ div.photos>h2, div.reviews>h2, div.photos{
+   border-bottom: 1px solid grey;
+   padding-bottom: 1rem;
+ }
+
+ div.photos>h2 {
+   padding-top: 1rem;
+   border-top: 1px solid grey;
+ }
+
+ div.photos {
+   padding-bottom: 10rem;
+ }
+
+ div.reviews>h2 {
+   margin-top: 1rem;
+ }
+
+ button {
+   float: right;
+   margin-top: 1rem;
+   font-family: 'Montserrat', sans-serif;
+   background: none;
+   text-decoration: none;
+   font-size: 1rem;
+   border: none;
+   margin-right: 1rem;
+
+ }
+
+ .arrow {
+   width:20px;
+ }
+
+ .arrow:hover {
+   opacity: 30%;
  }
