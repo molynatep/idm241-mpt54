@@ -107,7 +107,7 @@
   justify-items: center;
   margin: 2.5rem;
   grid-gap:3rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
 }
 
   /* Alpha Comments */
@@ -369,6 +369,15 @@
   opacity: 100%;
 }
 
+.text {
+  max-width: 700px;
+  line-height: 2;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
 @media screen and (max-width: 950px) {
   .leftmodal {
     grid-column-start: 1;
@@ -383,5 +392,11 @@
   .modal .m-container {
     max-width: 400px;
   }
+}
 
+@media screen and (max-width: 400px) {
+  div.text {
+    margin: 0;
+    font-size: .8rem;
+  }
 }
