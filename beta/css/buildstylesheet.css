@@ -189,7 +189,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     min-height: 150px;
     height: auto;
     margin: 0 auto;
@@ -226,7 +226,7 @@
     width: 100%;
     margin: 0;
     padding: 10px 20px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
     color: #f2f2f2;
     font-weight: 500;
     font-size: 18px;
@@ -271,8 +271,8 @@
     width: 100%;
     height: auto;
     margin: 0;
-    padding: 20px;
-    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    border-radius: 5px 5px;
  }
   .modal .m-container .m-content .m-footer {
     display: flex;
@@ -294,4 +294,28 @@
 
  .modalimg {
    width: 100%;
+ }
+
+ .modalgrid {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+ }
+
+ .leftmodal {
+   grid-column-start: 1;
+   grid-column-end: 5;
+ }
+
+ .rightmodal {
+   grid-column-start: 5;
+   grid-column-end: 7;
+   font-size: .85rem;
+   padding-left: 1.2rem;
+   line-height: 1.5;
+ }
+
+ .photos>img {
+   float: left;
+   width:50%;
+   padding: 0 5px 20px 0;
  }
