@@ -356,3 +356,15 @@
  .arrow:hover {
    opacity: 30%;
  }
+
+ .m-close:hover {
+   opacity: 70%;
+ }
+
+ .img2 {
+   opacity: 70%;
+ }
+
+ .img2:hover {
+  opacity: 100%;
+}
