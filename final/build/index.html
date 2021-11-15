@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Beta Build</title>
+   <link rel="normalize" href="../css/normalize.css">
+   <link rel="stylesheet" href="../css/buildstylesheet.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Modal container and dark background   -->
+<div class="modal" id="fin-fout-modal">
+
+   <!-- Content container  -->
+   <div class="m-container">
+
+       <p class="m-close"></p> <!-- Main close button  -->
+
+       <!-- Content container  -->
+       <div class="m-content">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p> <!-- Content example  -->
+           </div>
+       </div>
+   </div>
+
+<div class="modal do-not-close" id="slide-bottom-modal">
+   <div class="m-container slide-from-bottom">
+       <p class="m-close"></p>
+       <div class="m-content">
+          <div class= "modalgrid">
+          <div class="leftmodal">
+          <img class="modalimg" src="../imgs/chicken1-large.jpg" alt=chicken1>
+          </div>
+          <div class="rightmodal">
+            <div class="photos">
+            <button><img class="arrow" src="../imgs/arrow.png" alt="uparrow"></button>
+           <h2>Photos</h2>
+           <img class= "img1" src="../imgs/chicken1-small.jpg" alt="chicken1">
+           <img class= "img2" src="../imgs/chicken2-small.jpg" alt="chicken2">
+           </div>
+           <button><img class="arrow" src="../imgs/arrow2.png" alt="downarrow"></button>
+           <div class="reviews">
+               <h2>Reviews</h2>
+           </div>
+          </div>
+           </div>
+       </div>
+   </div>
+</div>
+    <div class="center">
+   <main class="bg grid">
+      <div>
+      <h1>Most mentioned dishes</h1>
+         <div id="stage" class="scale box">
+            <a href="#" > 
+             <img class= "btn-modal" data-id="slide-bottom-modal" src="../imgs/chicken2-large.jpg" width="250" alt="chicken2">
+            </a>
+            <a href="#">       
+            <img class= "btn-modal" data-id="slide-bottom-modal" src="../imgs/chicken1-large.jpg" width="250" alt="chicken1">
+            </a>
+         </div>
+      <div class="foodinfo">
+      <h1 class="foodheader">Chicken Briyani</h1>
+      <p>2 Photos • 4 Reviews</p>
+      </div>
+      </div>
+      <div class="alpha">
+      <h1>IDM 241 - Beta Build</h1>
+      <h2>Yelp Microinteraction - 
+         <a class="link" href="https://www.yelp.com/biz/haveli-virasat-philadelphia" target="_blank">
+         Link</a>
+      </h2>
+      <div class="text">
+      <p class="bold">Trigger:</p>
+      <ul>
+         <li>Hover over photo</li>
+         <li> Click on photo</li>
+         <li>Hover over X</li>
+      </ul>
+      <p class="bold">Rules:</p>
+         <ul>
+         <li>Cursor changes to pointer when hovering over image</li>
+         <li>On hover the photo expands, a drop shadow appears, and a new photo fades in on top of current photo after 2 seconds</li>
+         <li>Photo goes back to original size when hovered off photo</li>
+         <li>Drop shadow disappears when hovered off photo</li>
+         <li>Remain on same photo the slideshow was on when hovered off photo</li>
+         <li>When the photo is clicked on, a modal pops up with a larger image of a photo from the slideshow on the lefthand side and with more photos and reviews on the righthand side</li>
+         <li>The modal slides up and fades in from the bottom and a black background with a low opacity fades in behind the modal</li>
+         <li>When user hovers over the X on the modal, the cursor changes to pointer and the X hover state lowers in opacity</li>
+         <li>When the user hovers over the smaller photo in the modal that is not the large photo on the left, it increases to 100% opacity and lowers in opacity when hovered off</li>
+         <li>When the user hovers over the up and down arrows in the modal, they decrease in opacity and go back to 100% opacity when hovered off </li>
+         <li>When x is clicked on the modal, the background fades out back to 0% opacity and the modal slides off and fades out of the screen towards the bottom</li>
+      </ul>
+      <p class="bold">Feedback:</p>
+      <ul>
+         <li>Cursor changes to pointer when hovering over image</li>
+         <li>On hover the photo expands, a drop shadow appears, and a new photo fades in on top of current photo after 2 seconds</li>
+         <li>Photo goes back to original size when hovered off photo</li>
+         <li>Drop shadow disappears when hovered off photo</li>
+         <li>Remain on same photo the slideshow was on when hovered off photo</li>
+         <li>When the photo is clicked on, a modal pops up with a larger image of a photo from the slideshow on the lefthand side and with more photos and reviews on the righthand side</li>
+         <li>The modal slides up and fades in from the bottom and a black background with a low opacity fades in behind the modal</li>
+         <li>When user hovers over the X on the modal, the cursor changes to pointer and the X hover state lowers in opacity</li>
+         <li>When the user hovers over the smaller photo in the modal that is not the large photo on the left, it increases to 100% opacity and lowers in opacity when hovered off</li>
+         <li>When the user hovers over the up and down arrows in the modal, they decrease in opacity and go back to 100% opacity when hovered off </li>
+         <li>When x is clicked on the modal, the background fades out back to 0% opacity and the modal slides off and fades out of the screen towards the bottom</li>
+      </ul>
+         <p class="bold">Loop & Modes:</p>
+            <ul>
+               <li>Slideshow repeats until user is no longer hovering over the photo</li>
+               <li>When the user clicks on the image, a modal comes up on the screen and when the user hovers over the X it changes to a lower opacity to indicate the user can click on it to close the modal.</li>
+            </ul>
+            </div>
+         </div>
+   </main>
+   </div>
+   <script src="script.js"></script>
+   
+</body>
+</html>

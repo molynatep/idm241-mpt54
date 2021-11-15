@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'galano-grotesque';
+  src: url('../fonts/GalanoGrotesqueDEMO-Bold.woff2') format('woff2'),
+      url('../fonts/GalanoGrotesqueDEMO-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+ 
+ 
+ html {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+  box-sizing: border-box;
+}
+
+ /*css reset and font stuff*/
+ body {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-family: 'montserrat',sans-serif;
+   font-size: 1rem;
+   color: #3A3F67;
+   background-color: #e8e8f6;
+ }
+
+ h1, h2{
+   margin: 0 0 .3rem;
+   text-align: center;
+   letter-spacing: .03em;
+   color: #f43939;
+   font-family: 'galano-grotesque','montserrat',sans-serif;
+ }
+ h2 {
+   font-size: 1.2rem;
+   margin-bottom: 2rem;;
+ }
+
+ a {
+  color: #0ab3c9;
+  text-decoration: none;
+ }
+
+ a:hover {
+  color:#0ab3c9;
+  text-decoration: underline;
+ }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.width {
+  margin: 0 2rem 1.8rem;
+  padding: 5.5rem 0 0;
+}
+.bold {
+  font-weight:bold;
+  color: #0ab3c9;
+}
+
+p {
+  max-width: 600px;
+}
+
+li {
+  margin-bottom: .8rem;
+  line-height: 1.8;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  grid-gap: 1.2rem;
+  margin: 4rem 2rem 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.alpha {
+  background-color: white;
+  padding: 2.2rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  max-width: 650px;
+}
+
+img{
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.grids {
+  display: grid;
+  justify-items: center;
+  grid-gap: 1.2em;
+  margin: 4rem 0 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+div.grid>img {
+  width: 250px;
+}
+
+div.grids>img {
+  width: 600px;
+}
+
+@media only screen and (max-width: 630px) {
+  div.grids>img {
+    width: 400px;
+  }
+  .grids {
+    display: grid;
+    justify-items: center;
+    grid-gap: 1.2em;
+    margin: 2rem 0 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  div.grids>img {
+    width: 310px;
+  }
+}
