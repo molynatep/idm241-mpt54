@@ -1,4 +1,12 @@
 
+ @font-face {
+  font-family: 'galano-grotesque';
+  src: url('../fonts/GalanoGrotesqueDEMO-Bold.woff2') format('woff2'),
+      url('../fonts/GalanoGrotesqueDEMO-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
  html {
    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
    box-sizing: border-box;
@@ -19,6 +27,10 @@
   h1 {
      font-size: 1.2rem;
      margin: 1.2rem 0;
+  }
+
+   h1, h2 {
+    font-family: 'galano-grotesque';
   }
 
   .foodheader {
@@ -119,7 +131,7 @@
  }
 
  div.alpha>h2 {
-   font-size: 1.2rem;
+   font-size: 1.1rem;
    margin-bottom: 2rem;
  }
 
@@ -322,6 +334,7 @@
  div.photos>h2, div.reviews>h2, div.photos{
    border-bottom: 1px solid grey;
    padding-bottom: 1rem;
+   padding-left: .5rem;
  }
 
  div.photos>h2 {
