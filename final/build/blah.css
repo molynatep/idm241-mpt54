@@ -1,0 +1,77 @@
+
+  .container {
+    width: 40%;
+    min-width: 260px;
+    height: 300px;
+    background-color: pink;
+    margin: 20px auto;
+  }
+  
+  #controls-container {
+    height: 80px;
+    background-image: url(https://p.userapi.com/c638029/v638029131/33a3a/zmWSrbJK254.jpg);
+  }
+  
+  .controls-container:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .control {
+    position: relative;
+    float: left;
+    width:25%;
+    height: 100%;  
+  }
+  
+  .control-btn {
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    border: 2px solid white;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 46px;
+    transition: all .3s;
+  }
+  
+  .control-btn:hover {
+    background-color: rgba(98, 89, 89, .4);
+  }
+  
+  #images-container {
+    height: 220px;
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: all .5s;
+  }
+  
+  .image-1 {
+    background-image: url(../imgs/chicken1-small.jpg);
+  }
+  
+  .image-2 {
+    background-image: url(https://pp.userapi.com/c836625/v836625131/29e65/z07qIqmcfGk.jpg);
+  }
+  
+  .image[data-active="active"]{
+    opacity: 1;
+  }
