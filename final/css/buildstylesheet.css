@@ -392,10 +392,12 @@
   cursor: pointer;
   text-align: center;
   transition: all .3s;
+  height: 110px;
 }
 
 .control-btn>img {
   width: 140px;
+  padding: .5rem;
 }
 
 .control-btn:hover {
