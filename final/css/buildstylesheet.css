@@ -553,3 +553,11 @@
     font-size: .8rem;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .wrapper.active div.hide {
+    height: 260px;
+   }
+   .wrapper2.active div.hide {
+    height: 130px; }
+}
