@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'roboto',sans-serif;
+    font-family: 'montserrat', 'roboto', sans-serif;
     font-size: 1rem;
     background-color: #FCF7F3;
   }
@@ -41,6 +41,11 @@
      color: #767481;
      margin-top: .4rem;
 
+  }
+  p.smoltext {
+    font-size: .8rem;
+    line-height: 0;
+    padding-top: .5rem;
   }
 
   .center {
@@ -138,6 +143,10 @@
  div.alpha>ul {
     line-height: 1.8;
  }
+
+ li {
+   margin-bottom: .8rem;
+   }
 
  .alpha {
    font-family: 'montserrat',sans-serif;
@@ -383,21 +392,16 @@
   cursor: pointer;
   text-align: center;
   transition: all .15s;
-  height: 106px;
+  height: 108px;
   border-radius: 3px;
 }
 
 .control-btn>img {
   width: 140px;
-  padding: .2rem;
   border-radius: 3px;
 }
 .control-btn>img:hover {
-  opacity: 80%;
-}
-
-.control-btn:hover {
-  background-color: grey;
+  opacity: 70%;
 }
 
 #images-container {
@@ -437,7 +441,7 @@
   margin: 10px auto;
   display: block;
   text-align: center;
-  transition: 0.15s ease; }
+  transition: 0.25s ease; }
   .wrapper.active .arrow {
     transform: rotate(45deg) translate(-5px, -5px); }
     .wrapper.active .arrow:before {
@@ -501,7 +505,7 @@
   margin: 1rem 0 0 0;
   cursor: pointer;
   border-bottom: 1px solid grey;
-  transition: 0.15s ease; }
+  transition: 0.2s ease; }
 
   div.hide {
     padding: 0;
@@ -509,7 +513,7 @@
     height: 0;
     line-height: 0;
     opacity: 0;
-    transition: 0.4s ease;
+    transition: 0.3s ease;
     cursor: pointer;
     overflow: hidden; }
 
