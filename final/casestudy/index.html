@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Final Build</title>
+   <link rel="normalize" href="../css/normalize.css">
+   <link rel="stylesheet" href="../css/buildstylesheet.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Modal container and dark background   -->
+<div class="modal" id="fin-fout-modal">
+
+   <!-- Content container  -->
+   <div class="m-container">
+
+       <p class="m-close"></p> <!-- Main close button  -->
+
+       <!-- Content container  -->
+       <div class="m-content">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cumque.</p> <!-- Content example  -->
+           </div>
+       </div>
+   </div>
+
+<div class="modal do-not-close" id="slide-bottom-modal">
+   <div class="m-container slide-from-bottom">
+       <p class="m-close"></p>
+       <div class="m-content">
+          <div class= "modalgrid">
+          <div class="leftmodal" id="images-container">
+                <div class="image image-1" id="1" data-active="active"></div>
+                <div class="image image-2" id="2"></div>
+          </div>
+
+
+          <div class="rightmodal">
+             <div class="photos">
+               <div class="wrapper wrapper1"  id="wrapper">
+                <h2 class="click-text">Photos <span class="arrow"></span></h2>
+                <div class="hide">
+               <div id="controls-container">
+                     <div class= "control">
+                  <div class="control-btn">
+                     <img data-image="1" src="../imgs/chicken1-small.jpg" alt="chicken1">
+                  </div>
+               </div>
+               <div class= "control">
+                  <div class= "control-btn">
+                  <img data-image="2" src="../imgs/chicken2-small.jpg" alt="chicken2">
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+         </div>
+
+           <div class="reviews">
+            <div class="wrapper wrapper2"  id="wrapper2">
+             <h2 class="click-text">Reviews <span class="arrow"></span></h2>
+             <div class="hide">
+                  <img class="review" src="../imgs/review.png" alt="review">
+               </div>
+         </div>
+        </div>
+
+
+           
+           </div>
+          </div>
+         </div>
+         </div>
+         </div>
+         
+    <div class="center">
+   <main class="bg grid">
+      <div>
+      <h1>Most mentioned dishes</h1>
+         <div id="stage" class="scale box">
+            <a href="#" > 
+             <img class= "btn-modal" data-id="slide-bottom-modal" src="../imgs/chicken2-large.jpg" width="250" alt="chicken2">
+            </a>
+            <a href="#">       
+            <img class= "btn-modal" data-id="slide-bottom-modal" src="../imgs/chicken1-large.jpg" width="250" alt="chicken1">
+            </a>
+         </div>
+      <div class="foodinfo">
+      <h1 class="foodheader">Chicken Briyani</h1>
+      <p class="smoltext">2 Photos • 4 Reviews</p>
+      </div>
+      </div>
+      <div class="alpha">
+      <h1>IDM 241 - Final Build</h1>
+      <h2>Yelp Microinteraction - 
+         <a class="link" href="https://www.yelp.com/biz/haveli-virasat-philadelphia" target="_blank">
+         Link</a>
+      </h2>
+      <div class="text">
+      <p class="bold">Trigger:</p>
+      <ul>
+         <li>Hover over & click on photo.</li>
+         <li>Hover over & click on arrows & text inside modal.</li>
+         <li>Hover over & click on small photos inside modal.</li>
+         <li>Hover over & click on X in modal.</li>
+      </ul>
+      <p class="bold">Rules:</p>
+      <ul>
+         <li>Cursor changes to pointer when hovering over the image.</li>
+         <li>On hover, the photo expands, a drop shadow appears, and a new photo fades in on top of current photo after 2 seconds.</li>
+         <li>Photo goes back to original size & drop shadow disappears when hovered off the photo.</li>
+         <li>Remains on the same photo the slideshow was on when hovered off the photo.</li>
+         <li>When the photo is clicked on, a modal pops up with a larger image of a photo from the slideshow on the lefthand side and with photos and reviews on the righthand side. On smaller screens, the large photo is on the top and the photos & reviews are at the bottom of the modal.</li>
+         <li>The modal slides up and fades in from the bottom and a black background with a low opacity fades in behind the modal.</li>
+         <li>When the user hovers over the photo or reviews section in the modal, the cursor changes to a pointer and the text, arrow, and line decreases in opacity. When hovered off, the section goes back to 100% opacity. </li>
+         <li>When the photos or reviews section is clicked on, the arrow animates downwards and shows the content below fading in and sliding out towards the bottom. When it is clicked on again, the content disappears by fading out and sliding up towards the top. The arrow animates upwards as well.</li>
+         <li>When the user hovers over one of the smaller photos in the modal, the cursor changes to a pointer, and it decreases in opacity. When hovered off, it goes back to 100% opacity.</li> 
+         <li>When the smaller photo is clicked on, it changes the large photo to the same image. The photo dropdown closes once an image is clicked on and the arrow points upwards again.</li>
+         <li>When user hovers over the X on the modal, the cursor changes to pointer and the X hover state lowers in opacity.</li>
+         <li>When x is clicked on the modal, the background fades out back to 0% opacity and the modal slides off and fades out of the screen towards the bottom.</li>
+      </ul>
+      <p class="bold">Feedback:</p>
+      <ul>
+         <li>Same as rules.</li>
+      </ul>
+         <p class="bold">Loop & Modes:</p>
+               <ul>
+                  <li>Slideshow repeats until user is no longer hovering over the photo.</li>
+                  <li>When the user clicks on the image, a modal comes up on the screen and when the user hovers over the X it changes to a lower opacity to indicate the user can click on it to close the modal.</li>
+               </ul>
+            </div>
+         </div>
+   </main>
+   </div>
+   <script src="script.js"></script>
+   
+</body>
+</html>
